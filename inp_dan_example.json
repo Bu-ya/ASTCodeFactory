@@ -1,0 +1,57 @@
+[
+    {
+        "class": "Function",
+        "name": "test",
+        "args": ["a", "b"],
+        "body": [
+            "print(a)",
+            "print(b)",
+            "if a > b:",
+            "    print('a is greater than b')",
+            "elif a < b:",
+            "    print('a is less than b')",
+            "else:",
+            "    print('a is equal to b')",
+            "    class MyClass(object):",
+            "        def __init__(self, x):",
+            "            self.x = x",
+            "        def get_x(self):",
+            "            return self.x"
+        ]
+    },
+    {
+        "class": "Import",
+        "modules": ["math", "os"]
+    },
+    {
+        "class": "Comparison",
+        "left": "a",
+        "operator": ">",
+        "right": "b"
+    },
+    {
+        "class": "WhileLoop",
+        "condition": "a < 10",
+        "body": [
+            "print(a)",
+            "a += 1"
+        ]
+    },
+    {
+        "class": "Conditional",
+        "condition": "a < 5",
+        "body": [
+            "print('a is less than 5')",
+            "print('a is less than 5')"
+        ],
+        "elif_condition": "a == 5",
+        "elif_body": [
+            "print('a is equal to 5')",
+            "print('a is equal to 5')"
+        ],
+        "else_body": [
+            "print('a is greater than 5')",
+            "print('a is equal to 5')"
+        ]
+    }
+]
